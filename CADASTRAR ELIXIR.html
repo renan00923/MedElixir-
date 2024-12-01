@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MedElixir+</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+	<style>
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	background-image: linear-gradient(45deg, #0B60B0, #40A2D8, black);
+}
+header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	position: fixed;
+	justify-content: flex-end;
+}
+.logo {
+	width: 50px;
+	margin-right: 200px;
+}
+.logo img {
+	width: 250px;
+	align-items: center;
+	height: auto;
+	margin-top: 10px;
+}
+.menu {
+	display: flex;
+	align-items: center;
+}
+.menu nav ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 4px 8px;
+	display: inline-flex;
+	font-size: 16px;
+	font-family: Open Sans;
+	color: white;
+}
+.menu img {
+	width: 50px;
+	height: 50px;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	min-height: 100vh;
+	padding: 20px;
+} 
+.container {
+	display: inline-block;
+	width: 100%;
+	max-width: 600px;
+	background-color: white;
+	box-shadow: 5px 5px 10px black;
+	font-family: Saira Condensed;
+	padding: 32px;
+	box-sizing: border-box;
+}
+.titulo {
+	display: flex;
+	justify-content: flex-start;
+	height: 100%;
+	padding-left: 1rem;
+}
+.titulo h1 {
+	border-bottom: 1px solid blue;
+}
+.cadastro {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+.input-box {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+.input-box label {
+	margin-bottom: 5px;
+}
+.input-box input {
+	padding: 10px;
+	font-size: 16px;
+}
+.continuar {
+	width: 100%;
+	margin: 30px 0;
+}
+.continuar button {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 0.2rem;
+	border-radius: 5px;
+	border: none;
+	background-color: black;
+}
+.continuar button a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: Saira Condensed;
+	color: white;
+}
+
+	</style>
+
+
+
+
+</head>
+<body>
+
+	<header>
+		<div class="menu">
+			<nav>
+				<ul>
+					<li>
+						<a href="C:\Users\Vangerlandio\Downloads\PROJETO ELIXIR (1).html"><img src="C:\Users\Vangerlandio\Downloads\retornar.png" alt="RETORNAR"></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>		
+		<div class="container">
+			<form action="" method="post">
+
+				<div class="titulo">
+					<h1>CADASTRE-SE</h1>
+				</div>
+				<div class="cadastro">
+					<div class="input-box">
+						<label for="inome">Nome Completo*</label>
+						<input type="text" id="inome" name="nnome" placeholder="Digite o seu nome">
+					</div>
+
+					<div class="input-box">
+						<label for="inumero">Telefone*</label>
+						<input type="tel" id="inumero" name="nnumero" placeholder="(XX) 9XXX-XXXX">
+					</div>
+
+					<div class="input-box">
+						<label for="iusernome">Nome de usuário*</label>
+						<input type="text" id="iusernome" name="nusernome" placeholder="Digite o seu nome de usuário">
+					</div>
+
+					<div class="input-box">
+						<label for="iemail">Email*</label>
+						<input type="email" id="iemail" name="nemail" placeholder="Digite o seu email">
+					</div>
+					
+					<div class="input-box">
+						<label for="isenha">Senha*</label>
+						<input type="password" id="isenha" name="nsenha" placeholder="Digite a sua senha">
+					</div>
+
+					<div class="input-box">
+						<label for="iconfsenha">Confirmar Senha*</label>
+						<input type="password" id="iconfsenha" name="nconfsenha" placeholder="Digite sua senha">
+					</div>
+
+					<div class="continuar">
+						<button><a href="">Continuar</a></button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</main>
+</body>
+</html>

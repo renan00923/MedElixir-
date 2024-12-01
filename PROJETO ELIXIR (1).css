@@ -1,0 +1,221 @@
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0 auto;
+	padding: 0;
+}
+header {
+	background-color: black;
+	width: 100%;
+	display: flex;
+	padding: 0 auto;
+	flex-wrap: wrap;
+	position: fixed;
+	justify-content: space-evenly;
+	z-index: 10;
+}
+.logo {
+	width: 50px;
+	margin-right: 200px;
+}
+.logo img {
+	width: 250px;
+	align-items: center;
+	height: auto;
+	margin-top: 10px;
+}
+.menu {
+	display: flex;
+	align-items: center;
+}
+.menu nav ul li a {
+	margin-top: 5px;
+	margin-right: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 4px 8px;
+	display: inline-flex;
+	font-size: 16px;
+	font-family: Open Sans;
+	color: white;
+}
+.menu a:hover {
+	border-bottom: 1px solid #0389FE;
+	transition: 0.8s;
+}
+
+main {
+	background-color: ghostwhite;
+	display: flex;
+	flex-direction: column;
+}
+main .med-elixir {
+	padding-top: 50px;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient(45deg, #0B60B0, #40A2D8, black);
+	background-size: 220% 400%;
+	animation: cor-fundo 20s ease infinite;
+}
+@keyframes cor-fundo {
+	0% {
+		background-position: 0 70%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 50% 0;
+	}
+}
+.med-elixir h1 {
+	font-family: Saira Condensed;
+	font-size: 3em;
+}
+.med-elixir span {
+	text-transform: uppercase;
+	color: ghostwhite;
+}
+.med-elixir b {
+	color: ghostwhite;
+}
+.med-elixir b span {
+	color: #0389FE;
+}
+main .home {
+	justify-content: center;
+	padding-top: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: Saira Condensed;
+	flex-direction: column;
+	align-items: center;
+}
+main .produto {
+	justify-content: center;
+	padding-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: Saira Condensed;
+	flex-direction: column;
+	align-items: center;
+}
+main .home figure {
+	width: 75%;
+}
+main figure {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.home figure img {
+	box-shadow: 0 20px 30px 0;
+}
+.home section, .produto section, .home img, .produto img {
+	justify-content: left;	
+	display: flex;
+	align-items: center;
+	width: 75%;
+}
+.home section p {
+	text-align: justify;
+	font-size: 32px;
+}
+.home b {
+	color: #0389FE;
+}
+.produto {
+	display: flex;
+}
+.produto img {
+	width: 80px;
+	height: 80px;
+	margin-bottom: 15px; 
+}
+
+.produto section h1 {
+	font-size: 48px;
+	text-transform: uppercase;
+}
+.produto section p {
+	font-size: 32px;
+	text-align: justify;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center; 
+	align-items: flex-start;
+	font-family: Saira Condensed;
+	flex-wrap: wrap;
+}
+.colunas {
+	text-align: center;
+	margin: 60px 120px;
+}
+.colunas ul li {
+	white-space: nowrap;
+	list-style-type: none;
+	font-size: 28px;
+}
+.colunas h1 {
+	font-size: 48px;
+	text-transform: uppercase;
+	width: 110%
+}
+
+@media (max-width: 800px) { 
+	body { 
+		flex-direction: column; 
+		align-items: center; 
+	} 
+}
+.home figure {
+	flex-direction: row;
+	width: 80%;
+	display: inline-flex;
+	justify-content: center;
+	justify-items: center;
+}
+.home figure img {
+	width: 220px;
+	height: 300px;
+	margin: 5%;
+}
+.produto-elixir img {
+	color: black;
+	filter: drop-shadow(5px 5px 10px);
+	width: 350px;
+	height: 350px;
+}
+footer {
+	display: flex;
+ 	background-color: black;
+ 	justify-content: center;
+}
+.sobre-nos {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.empresa {
+	color: white;
+	font-family: Saira Condensed;
+	margin: 20px 80px;
+}
+.empresa section a {
+	text-decoration: none;
+	color: white;
+}
+.empresa a:hover {
+	border-bottom: 1px solid #0389FE;
+	transition: 0.8s;
+}

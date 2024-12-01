@@ -1,0 +1,121 @@
+body {
+	margin: 0 auto;
+	padding: 0 auto;
+}
+@keyframes cor-fundo {
+	0% {
+		background-position: 0 70%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 50% 0;
+	}
+}
+header {
+	background-color: black;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+	justify-content: space-between;
+}
+.logo {
+	width: 50px;
+	margin-right: 200px;
+}
+.logo img {
+	width: 250px;
+	align-items: center;
+	height: auto;
+	margin-top: 10px;
+}
+.menu {
+	display: flex;
+	align-items: center;
+}
+.menu img {
+	width: 50px;
+	height: 50px;
+	padding-right: 16px;
+}
+main {
+	display: flex;
+	height: 200vh;
+	width: 100%;
+	flex-direction: column;
+}
+.empresa {
+	font-family:Saira Condensed ;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	flex-direction: column;
+}
+.caracteristica-empresa {
+	font-family:Saira Condensed ;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	flex-direction: column;
+	padding: 40px 120px;
+}
+.empresa h1 {
+	padding-top: 80px;
+	display: flex;
+	justify-content: center;
+}
+.empresa h1, .caracteristica-empresa h1 {
+	text-transform: uppercase;
+	font-size: 40px;
+}
+.empresa p, .caracteristica-empresa p {
+	display: flex;
+	justify-content: center;
+	text-align: justify;
+	font-size: 26px;
+}
+.sobre-empresa {
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+}
+.container-empresa {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.valores {
+	display: inline-flex;
+	justify-content: center;
+	width: 100%;
+	flex-wrap: wrap;
+}
+.card {
+	background-color: white;
+	width: 250px;
+	height: 380px;
+	border-radius: 12px;
+	box-shadow: 0 20px 30px 0;
+	margin: 30px 75px 30px 75px;
+}
+.card div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 50%;
+}
+.card img {
+	width: 100%;
+	height: 150px;
+	border-radius: 15px 15px 0 0;
+}
+.card h1 {
+	font-size: 18px;
+	text-transform: uppercase;
+}
