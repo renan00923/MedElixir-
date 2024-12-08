@@ -23,11 +23,12 @@ header {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	position: fixed;
-	justify-content: flex-end;
+	position: relative;
+	justify-content: space-between;
+	background-color: black;
 }
 .logo {
-	width: 50px;
+	width: 26%;
 	margin-right: 200px;
 }
 .logo img {
@@ -40,43 +41,52 @@ header {
 	display: flex;
 	align-items: center;
 }
+.menu ul {
+	list-style-type: none;
+}
 .menu nav ul li a {
 	text-decoration: none;
 	text-transform: uppercase;
-	padding: 4px 8px;
-	display: inline-flex;
-	font-size: 16px;
+	padding: 4px 16px;
+	margin-right: 1.3rem;
+	display: flex;
+	font-size: 1rem;
 	font-family: Open Sans;
 	color: white;
+}
+.menu a:hover {
+	border-bottom: 1px solid #0389FE;
+	transition: 0.8s;
 }
 .menu img {
 	width: 50px;
 	height: 50px;
 }
-
 main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
-	min-height: 100vh;
-	padding: 20px;
+	height: 100vh;
 } 
 .container {
-	display: inline-block;
-	width: 100%;
-	max-width: 600px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 45%;
 	background-color: white;
 	box-shadow: 5px 5px 10px black;
 	font-family: Saira Condensed;
-	padding: 32px;
+	padding: 0rem 0 0 2rem;
 	box-sizing: border-box;
+}
+form {
+	width: 85%;
 }
 .titulo {
 	display: flex;
 	justify-content: flex-start;
 	height: 100%;
-	padding-left: 1rem;
 }
 .titulo h1 {
 	border-bottom: 1px solid blue;
@@ -91,14 +101,25 @@ main {
 .input-box {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 20px;
+	margin-bottom: 1.3rem;
 }
 .input-box label {
+	font-size: 1.3rem;
+	font-family: Open Sans;
 	margin-bottom: 5px;
 }
+.input-box label span {
+	color: red;
+	font-size: 1.3rem;
+}
 .input-box input {
-	padding: 10px;
-	font-size: 16px;
+	border: none;
+	padding: 0.6rem;
+	font-size: 1.1rem;
+}
+input:hover {
+	background-color: #C9C9C9;
+	transition: 0.8s;
 }
 .continuar {
 	width: 100%;
@@ -107,33 +128,167 @@ main {
 .continuar button {
 	display: flex;
 	justify-content: center;
-	width: 100%;
-	padding: 0.2rem;
-	border-radius: 5px;
+	width: 100%;	
+	border-radius: 10px;
 	border: none;
 	background-color: black;
 }
 .continuar button a {
+	width: 100%;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-size: Saira Condensed;
+	font-family: Saira Condensed;
 	color: white;
+	font-size: 1.1rem;
+	padding: 0.6rem;
 }
-
+button:hover {
+	background-color: darkblue;
+	transition: 0.8s;
+}
+@media (min-width:300px) and (max-width:375px) {
+	header {
+		margin-bottom: 5rem;
+	}
+	main {
+		width: 100%;
+		height: 100%;
+		margin-bottom: 5rem;
+	}
+	.logo {
+		width: 50%;
+		margin: 0;
+	}
+	.logo img {
+		width: 12.5rem;
+		align-items: center;
+		height: auto;
+		margin-top: 0.75rem;
+	}
+	.menu nav ul li a {
+		font-size: 0.8rem;
+		padding-top: 0.8rem;
+	}
+	.container {
+		width: 75%;
+	}
+	.input-box input {
+		border: none;
+		width: 90%;
+		padding: 0.75rem;
+	}
+	.continuar button {
+		width: 100%;
+	}
+}
+@media (min-width:376px) and (max-width: 768px) {
+	main {
+		padding-top: 4rem;
+		margin-bottom: 2rem;
+	}
+	.logo {
+		width: 50%;
+		margin: 0;
+	}
+	.logo img {
+		width: 12.5rem;
+		align-items: center;
+		height: auto;
+		margin-top: 0.75rem;
+	}
+	.menu nav ul li a {
+		font-size: 0.8rem;
+	}
+	.container {
+		width: 75%;
+	}
+	.input-box input {
+		border: none;
+		width: 90%;
+		padding: 0.75rem;
+	}
+	.continuar button {
+		width: 100%;
+	}
+}
+@media (min-width:700px) and (max-width:799px) {
+	.logo img {
+		width: 24rem;
+		height: auto;
+		margin-top: 10px;
+	}
+	.menu nav ul li a {
+		font-size: 1.7rem;
+		padding: 1rem 1rem 0.5rem 0;
+	}
+	.container {
+		width: 75%;
+	}
+	.titulo h1 {
+		font-size: 4rem;
+	}
+	.input-box input {
+		font-size: 1.5rem;
+	}
+	.input-box label {
+		font-size: 1.8rem;
+	}
+	.continuar button {
+		font-size: 2rem;
+	}
+	.continuar button a {
+		font-size: 2rem;
+	}
+}
+@media (min-width:800px) and (max-width:1023px) {
+ 	.logo img {
+		width: 26rem;
+		height: auto;
+		margin-top: 10px;
+	}
+	.menu nav ul li a {
+		font-size: 1.85rem;
+		padding: 1rem 1rem 0.5rem 0;
+	}
+	.container {
+		width: 75%;
+	}
+	.titulo h1 {
+		font-size: 4.5rem;
+	}
+	.input-box input {
+		font-size: 2.2rem;
+	}
+	.input-box label {
+		font-size: 2.5rem;
+	}
+	.continuar button {
+		font-size: 2.2rem;
+	}
+	.continuar button a {
+		font-size: 2rem;
+	}
+	.input-box label span {
+		font-size: 2.3rem;
+	}
+}
+	
 	</style>
-
-
-
 
 </head>
 <body>
 
 	<header>
+
+		<div class="logo">
+			<img src="https://i.ibb.co/tZ6pk7W/Med-Elixir-removebg-preview.png" alt="LOGO">
+		</div>
+
 		<div class="menu">
 			<nav>
 				<ul>
 					<li>
-						<a href="C:\Users\Vangerlandio\Downloads\PROJETO ELIXIR (1).html"><img src="C:\Users\Vangerlandio\Downloads\retornar.png" alt="RETORNAR"></a>
+						<a href="PROJETO ELIXIR (1).html">página inicial</a>
 					</li>
 				</ul>
 			</nav>
@@ -149,32 +304,32 @@ main {
 				</div>
 				<div class="cadastro">
 					<div class="input-box">
-						<label for="inome">Nome Completo*</label>
+						<label for="inome">Nome Completo<span>*</span></label>
 						<input type="text" id="inome" name="nnome" placeholder="Digite o seu nome">
 					</div>
 
 					<div class="input-box">
-						<label for="inumero">Telefone*</label>
-						<input type="tel" id="inumero" name="nnumero" placeholder="(XX) 9XXX-XXXX">
+						<label for="inumero">Telefone<span>*</span></label>
+						<input type="tel" id="inumero" name="nnumero" placeholder="(XX) 9XXXX-XXXX">
 					</div>
 
 					<div class="input-box">
-						<label for="iusernome">Nome de usuário*</label>
+						<label for="iusernome">Nome de usuário<span>*</span></label>
 						<input type="text" id="iusernome" name="nusernome" placeholder="Digite o seu nome de usuário">
 					</div>
 
 					<div class="input-box">
-						<label for="iemail">Email*</label>
+						<label for="iemail">Email<span>*</span></label>
 						<input type="email" id="iemail" name="nemail" placeholder="Digite o seu email">
 					</div>
 					
 					<div class="input-box">
-						<label for="isenha">Senha*</label>
+						<label for="isenha">Senha<span>*</span></label>
 						<input type="password" id="isenha" name="nsenha" placeholder="Digite a sua senha">
 					</div>
 
 					<div class="input-box">
-						<label for="iconfsenha">Confirmar Senha*</label>
+						<label for="iconfsenha">Confirmar Senha<span>*</span></label>
 						<input type="password" id="iconfsenha" name="nconfsenha" placeholder="Digite sua senha">
 					</div>
 

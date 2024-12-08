@@ -1,6 +1,7 @@
 body {
-	margin: 0 auto;
-	padding: 0 auto;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 @keyframes cor-fundo {
 	0% {
@@ -15,12 +16,25 @@ body {
 }
 header {
 	background-color: black;
-	width: 100%;
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 	position: relative;
 	justify-content: space-between;
+}
+.menu nav ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 4px 16px;
+	margin-right: 0.5rem;
+	display: flex;
+	font-size: 16px;
+	font-family: Open Sans;
+	color: white;
+}
+.menu a:hover {
+	border-bottom: 1px solid #0389FE;
+	transition: 0.8s;
 }
 .logo {
 	width: 50px;
@@ -43,7 +57,6 @@ header {
 }
 main {
 	display: flex;
-	height: 200vh;
 	width: 100%;
 	flex-direction: column;
 }
@@ -53,16 +66,15 @@ main {
 	align-items: center;
 	flex-wrap: wrap;
 	width: 100%;
-	flex-direction: column;
+	justify-content: center;
 }
 .caracteristica-empresa {
 	font-family:Saira Condensed ;
 	display: flex;
 	align-items: center;
-	flex-wrap: wrap;
-	width: 100%;
+	justify-content: center;
 	flex-direction: column;
-	padding: 40px 120px;
+	padding: 0.8rem 8rem;
 }
 .empresa h1 {
 	padding-top: 80px;
@@ -77,17 +89,18 @@ main {
 	display: flex;
 	justify-content: center;
 	text-align: justify;
-	font-size: 26px;
+	flex-wrap: wrap;
+	font-size: 28px;
 }
 .sobre-empresa {
 	width: 75%;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
 .container-empresa {
 	width: 100%;
 	display: flex;
-	flex-direction: row;
 }
 .valores {
 	display: inline-flex;
@@ -118,4 +131,126 @@ main {
 .card h1 {
 	font-size: 18px;
 	text-transform: uppercase;
+}
+@media (min-width:300px) and (max-width: 699px) {
+	.logo {
+		margin: 0;
+	}
+	.logo img {
+		width: 12.5rem;
+		align-items: center;
+		height: auto;
+		margin-top: 10px;
+	}
+	.menu nav ul li a {
+		font-size: 0.8rem;
+	}
+	.empresa {
+		display: flex;
+		justify-content: center;
+	} 
+	.sobre-empresa {
+		width: 90%;
+	}
+	.container-empresa {
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.caracteristica-empresa {
+		width: 100%;
+		padding: 0;
+	}
+	.caracteristica-empresa p {
+		width: 90%;
+	}
+	.empresa h1, .caracteristica-empresa h1 {
+		font-size: 2.2rem;
+		width: 100%;
+	}
+	.empresa p, .caracteristica-empresa p {
+		font-size: 1.6rem;
+	}
+	.card h1 {
+		font-size: 1.6rem;
+		text-align: center;
+	}
+}
+@media (min-width:700px) and (max-width:1023px) {
+	.logo {
+		margin: 0;
+	}
+	.logo img {
+		padding-top: 0.75rem;
+		width: 25.5rem;
+		height: 5.6rem;
+	}
+	.menu nav ul li a {
+		font-size: 1.7rem;
+		padding-top: 0.9rem;
+	}
+	.empresa {
+		display: flex;
+		justify-content: center;
+	} 
+	.sobre-empresa {
+		width: 90%;
+	}
+	.container-empresa {
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.caracteristica-empresa {
+		width: 100%;
+		padding: 0;
+	}
+	.caracteristica-empresa p {
+		width: 90%;
+	}
+	.empresa h1, .caracteristica-empresa h1 {
+		font-size: 4rem;
+		width: 100%;
+	}
+	.empresa p, .caracteristica-empresa p {
+		font-size: 2.3rem;
+	}
+	.card h1 {
+		font-size: 2rem;
+		text-align: center;
+	}
+}	
+@media (min-width:1024px) and (max-width:1280px) {
+	.logo img {
+		padding-top: 0.75rem;
+		width: 29.5rem;
+		height: 6.6rem;
+	}
+	.menu nav ul li a {
+		font-size: 2rem;
+		padding-top: 0.9rem;
+	}
+	.empresa h1, .caracteristica-empresa h1 {
+		font-size: 4.5rem;
+		width: 100%;
+	}
+	.container-empresa {
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.empresa p, .caracteristica-empresa p {
+		font-size: 3.2rem;
+	}
+	.card h1 {
+		font-size: 2rem;
+		text-align: center;
+	}
+	.card {
+		width: 20.7rem;
+		height: 27rem;
+	}
+	.card img {
+		height: 12rem;
+	}
 }

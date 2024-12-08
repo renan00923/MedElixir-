@@ -15,10 +15,6 @@ header {
 	justify-content: space-evenly;
 	z-index: 10;
 }
-.logo {
-	width: 50px;
-	margin-right: 200px;
-}
 .logo img {
 	width: 250px;
 	align-items: center;
@@ -29,12 +25,15 @@ header {
 	display: flex;
 	align-items: center;
 }
+.menu ul {
+	padding: 0;
+}
 .menu nav ul li a {
 	margin-top: 5px;
 	margin-right: 10px;
 	text-decoration: none;
 	text-transform: uppercase;
-	padding: 4px 8px;
+	padding: 4px 16px;
 	display: inline-flex;
 	font-size: 16px;
 	font-family: Open Sans;
@@ -44,7 +43,6 @@ header {
 	border-bottom: 1px solid #0389FE;
 	transition: 0.8s;
 }
-
 main {
 	background-color: ghostwhite;
 	display: flex;
@@ -87,6 +85,10 @@ main .med-elixir {
 .med-elixir b span {
 	color: #0389FE;
 }
+main .produto-elixir img {
+	width: 26rem;
+	height: 21rem;
+}
 main .home {
 	justify-content: center;
 	padding-top: 100px;
@@ -126,7 +128,7 @@ main figure {
 }
 .home section p {
 	text-align: justify;
-	font-size: 32px;
+	font-size: 2rem;
 }
 .home b {
 	color: #0389FE;
@@ -141,18 +143,18 @@ main figure {
 }
 
 .produto section h1 {
-	font-size: 48px;
+	font-size: 3rem;
 	text-transform: uppercase;
 }
 .produto section p {
-	font-size: 32px;
+	font-size: 2rem;
 	text-align: justify;
 }
 .container {
 	display: flex;
 	flex-direction: row;
 	justify-content: center; 
-	align-items: flex-start;
+	align-items: center;
 	font-family: Saira Condensed;
 	flex-wrap: wrap;
 }
@@ -165,17 +167,12 @@ main figure {
 	list-style-type: none;
 	font-size: 28px;
 }
-.colunas h1 {
-	font-size: 48px;
-	text-transform: uppercase;
-	width: 110%
+.colunas ul {
+	padding: 0;
 }
-
-@media (max-width: 800px) { 
-	body { 
-		flex-direction: column; 
-		align-items: center; 
-	} 
+.colunas h1 {
+	font-size: 3rem;
+	text-transform: uppercase;
 }
 .home figure {
 	flex-direction: row;
@@ -192,7 +189,7 @@ main figure {
 .produto-elixir img {
 	color: black;
 	filter: drop-shadow(5px 5px 10px);
-	width: 350px;
+	width: 380px;
 	height: 350px;
 }
 footer {
@@ -211,11 +208,267 @@ footer {
 	font-family: Saira Condensed;
 	margin: 20px 80px;
 }
-.empresa section a {
+.empresa h3 {
+	font-size: 1.5rem;
+}
+.empresa section a, .empresa section p {
 	text-decoration: none;
 	color: white;
+	font-size: 1.2rem;
 }
 .empresa a:hover {
 	border-bottom: 1px solid #0389FE;
 	transition: 0.8s;
+}
+
+/* RESPONSIVIDADE DO SITE */
+
+@media (min-width:300px) and (max-width: 699px) { 
+	body {
+		padding: 0;
+	 	margin: 0;
+	}
+	main { 
+		flex-direction: column; 
+		align-items: center; 
+		text-align: center;
+	} 
+	header {
+		position: relative;
+		justify-content: center;
+	}
+	.menu {
+		text-align: center;
+	}
+	.menu ul {
+		list-style-type: none;
+	}
+	.menu nav ul li a {
+		
+		font-size: 0.8rem;
+		padding: 4px 12px;
+	}
+	.med-elixir section h1 {
+		text-align: center;
+		font-size: 2rem;
+		margin: 0 1.2rem 0 1.2rem;
+	}
+	main .produto-elixir img {
+		width: 19.5rem;
+		height: 15rem;
+	}
+	.logo img {
+		width: 12.5rem;
+		align-items: center;
+		height: auto;
+		padding-top: 0.62rem;
+	}
+	.home section, .produto section {
+		width: 80%;
+	}
+	.produto section p, .home section p {
+		font-size: 1.6rem;
+		text-align: justify;
+	}
+	.produto section h1 {
+		font-size: 2.2rem;
+	}
+	.container {
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.colunas section {
+		width: 75%;
+	}
+	.colunas h1 {
+		font-size: 2.2rem;
+		display: flex;
+		justify-content: center;
+	}
+	.colunas ul li {
+		display: flex;
+		justify-content: center;
+	}
+	footer .sobre-nos {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	.empresa {
+		font-size: 1.2rem;
+		margin: 10px 20px;
+	}
+	.empresa section p {
+		font-size: 1rem;
+	}
+	.empresa section a {
+		font-size: 1rem;
+		padding-top: 1rem;
+		padding-bottom: 0.2rem;
+	}
+}
+@media (min-width:700px) and (max-width:1023px) {
+	.menu {
+		text-align: center;
+	}
+	.menu ul {
+		list-style-type: none;
+	}
+	.menu nav ul li a {
+		font-size: 1.7rem;
+		padding: 0.5rem 1.5rem;
+		justify-content: center;
+	}
+	main .home {
+		padding-top: 0;
+	}
+	.home section {
+		padding-top: 6.25rem;
+	}
+	section h1 {
+		text-align: center;
+	}
+	.med-elixir section {
+		width: 85%;
+		margin-top: 8rem;
+	}
+	.med-elixir section h1 {
+		text-align: center;
+		font-size: 4.5rem;
+	}
+	section .produto-elixir img {
+		width: 28rem;
+		height: 21rem;
+	}
+	.logo img {
+		padding-top: 0.75rem;
+		width: 25.5rem;
+		height: 5.6rem;
+	}
+	.home figure img {
+		margin: 3.2%;
+		width: 16rem;
+		height: 20.75rem;
+	}
+	.home section, .produto section {
+		width: 90%;
+	}
+	.home section p, .produto section p {
+		font-size: 2.3rem;
+	}
+	.home figure img {
+		margin: 2rem 9rem;
+	}
+	.produto img {
+		width: 6rem;
+		height: 6rem;
+		margin: 2rem 2rem 0 2rem;
+	}
+	.produto section h1 {
+		font-size: 3.8rem;
+	}
+	.empresa {
+		margin: 0.62rem 1rem;
+	}
+	.empresa h3 {
+		font-size: 3.8rem;
+	}
+	.empresa section a, .empresa section p {
+		font-size: 1.3rem;
+	}
+	.colunas h1 {
+		font-size: 4rem;
+	}
+	.colunas ul li {
+		font-size: 2.5rem;
+	}
+	.empresa {
+		text-align: center;
+		margin: 0.6rem 10rem;
+	}
+	.empresa section a {
+		font-size: 1.7rem;
+		padding-top: 1rem;
+		padding-bottom: 0.2rem;
+	}
+	.empresa h3 {
+		font-size: 2.5rem;
+	}
+	.empresa section p {
+		font-size: 1.7rem;
+	}
+} 
+@media (min-width:1024px) and (max-width:1280px) {
+	.logo img {
+		padding-top: 0.75rem;
+		width: 29.5rem;
+		height: 6.6rem;
+	}
+	.menu nav ul li a {
+		font-size: 2rem;
+		padding: 0.9rem 2.3rem;
+	}
+	.med-elixir section {
+		width: 90%;
+		text-align: center;
+	}
+	.med-elixir section h1 {
+		font-size: 5rem;
+	}
+	main .produto-elixir img {
+		width: 35rem;
+		height: 27rem;
+	}
+	.home figure {
+		flex-direction: column;
+	}
+	.home figure img {
+		margin: 1rem;
+		width: 310px;
+		height: 400px;
+	}
+	.produto img {
+		width: 8rem;
+		height: 8rem;
+		margin: 5rem 5rem 0 5rem;
+	}
+	.produto section h1 {
+		font-size: 4.5rem;
+		text-align: center;
+	}
+	.home section p, .produto section p {
+		font-size: 3.2rem;
+	}
+	.empresa {
+		margin: 0.62rem 1rem;
+	}
+	.empresa h3 {
+		font-size: 3.8rem;
+	}
+	.empresa section a, .empresa section p {
+		font-size: 2rem;
+	}
+	.colunas h1 {
+		font-size: 4.5rem;
+	}
+	.colunas ul li {
+		font-size: 3.2rem;
+	}
+	.empresa {
+		text-align: center;
+		margin: 0.6rem 10rem;
+	}
+	.empresa section a {
+		font-size: 2rem;
+		padding-top: 1rem;
+		padding-bottom: 0.2rem;
+	}
+	.empresa h3 {
+		font-size: 2.5rem;
+	}
+	.empresa section p {
+		font-size: 2rem;
+	}
 }
