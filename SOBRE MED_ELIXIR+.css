@@ -3,17 +3,6 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 }
-@keyframes cor-fundo {
-	0% {
-		background-position: 0 70%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 50% 0;
-	}
-}
 header {
 	background-color: black;
 	display: flex;
@@ -28,7 +17,7 @@ header {
 	padding: 4px 16px;
 	margin-right: 0.5rem;
 	display: flex;
-	font-size: 16px;
+	font-size: 1rem;
 	font-family: Open Sans;
 	color: white;
 }
@@ -140,7 +129,7 @@ main {
 		width: 12.5rem;
 		align-items: center;
 		height: auto;
-		margin-top: 10px;
+		margin-top: 4px;
 	}
 	.menu nav ul li a {
 		font-size: 0.8rem;

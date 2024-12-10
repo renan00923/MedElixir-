@@ -43,6 +43,7 @@ header {
 }
 .menu ul {
 	list-style-type: none;
+	padding: 0;
 }
 .menu nav ul li a {
 	text-decoration: none;
@@ -165,9 +166,11 @@ button:hover {
 		height: auto;
 		margin-top: 0.75rem;
 	}
+	.menu ul {
+		padding: 0;
+	}
 	.menu nav ul li a {
-		font-size: 0.8rem;
-		padding-top: 0.8rem;
+		font-size: 0.7rem;
 	}
 	.container {
 		width: 75%;
@@ -241,6 +244,10 @@ button:hover {
 	}
 }
 @media (min-width:800px) and (max-width:1023px) {
+	main {
+		padding-top: 4rem;
+		margin-bottom: 2rem;
+	}
  	.logo img {
 		width: 26rem;
 		height: auto;
@@ -251,13 +258,13 @@ button:hover {
 		padding: 1rem 1rem 0.5rem 0;
 	}
 	.container {
-		width: 75%;
+		width: 80%;
 	}
 	.titulo h1 {
 		font-size: 4.5rem;
 	}
 	.input-box input {
-		font-size: 2.2rem;
+		font-size: 2rem;
 	}
 	.input-box label {
 		font-size: 2.5rem;
@@ -315,7 +322,7 @@ button:hover {
 
 					<div class="input-box">
 						<label for="iusernome">Nome de usuário<span>*</span></label>
-						<input type="text" id="iusernome" name="nusernome" placeholder="Digite o seu nome de usuário">
+						<input type="text" id="iusernome" name="nusernome" placeholder="Digite o nome de usuário">
 					</div>
 
 					<div class="input-box">

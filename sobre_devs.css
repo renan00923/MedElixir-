@@ -1,15 +1,29 @@
 body {
-	margin: 0 auto;
-	padding: 0 auto;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 header {
 	background-color: black;
-	width: 100%;
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 	position: relative;
 	justify-content: space-between;
+}
+.menu nav ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 4px 16px;
+	margin-right: 0.5rem;
+	display: flex;
+	font-size: 16px;
+	font-family: Open Sans;
+	color: white;
+}
+.menu a:hover {
+	border-bottom: 1px solid #0389FE;
+	transition: 0.8s;
 }
 .logo {
 	width: 50px;
@@ -69,4 +83,88 @@ header {
 .desenvolvedor h2 {
 	display: flex;
 	justify-content: center;
+}
+@media (min-width:300px) and (max-width: 699px) {
+	.logo {
+		margin: 0;
+	}
+	.logo img {
+		width: 12.5rem;
+		align-items: center;
+		height: auto;
+		margin-top: 4px;
+	}
+	.menu nav ul li a {
+		font-size: 0.8rem;
+	}
+	.inicio {
+		width: 90%;
+		justify-content: center;
+	}
+	.inicio h1 {
+		font-size: 2.2rem;
+	}
+	.inicio p {
+		width: 100%;
+		font-size: 1.6rem;
+	}
+	.desenvolvedor h2 {
+		font-size: 1.6rem;
+		font-family: Saira Condensed;
+	}
+}
+@media (min-width:700px) and (max-width:1023px) {
+	.logo {
+		margin: 0;
+	}
+	.logo img {
+		padding-top: 0.75rem;
+		width: 25.5rem;
+		height: 5.6rem;
+	}
+	.menu nav ul li a {
+		font-size: 1.7rem;
+		padding-top: 0.9rem;
+	}
+	.inicio {
+		width: 90%;
+		justify-content: center;
+	}
+	.inicio h1 {
+		font-size: 4rem;
+	}
+	.inicio p {
+		width: 100%;
+		font-size: 2.3rem;
+	}
+	.desenvolvedor h2 {
+		font-size: 2.3rem;
+		font-family: Saira Condensed;
+	}
+}
+@media (min-width:1024px) and (max-width:1280px) {
+	.logo img {
+		padding-top: 0.75rem;
+		width: 29.5rem;
+		height: 6.6rem;
+	}
+	.menu nav ul li a {
+		font-size: 2rem;
+		padding-top: 0.9rem;
+	}
+	.inicio {
+		width: 90%;
+		justify-content: center;
+	}
+	.inicio h1 {
+		font-size: 4.5rem;
+	}
+	.inicio p {
+		width: 100%;
+		font-size: 3.2rem;
+	}
+	.desenvolvedor h2 {
+		font-size: 3.2rem;
+		font-family: Saira Condensed;
+	}
 }
