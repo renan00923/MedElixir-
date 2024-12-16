@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>MedElixir+</title>
+	<title>MedElixir+ | CADASTRE-SE </title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -69,12 +69,13 @@ main {
 	align-items: center;
 	width: 100vw;
 	height: 100vh;
+	margin: 3rem 0 3rem 0;
 } 
 .container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 45%;
+	width: 60%;
 	background-color: white;
 	box-shadow: 5px 5px 10px black;
 	font-family: Saira Condensed;
@@ -82,7 +83,7 @@ main {
 	box-sizing: border-box;
 }
 form {
-	width: 85%;
+	width: 75%;
 }
 .titulo {
 	display: flex;
@@ -102,7 +103,6 @@ form {
 .input-box {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 1.3rem;
 }
 .input-box label {
 	font-size: 1.3rem;
@@ -114,7 +114,7 @@ form {
 	font-size: 1.3rem;
 }
 .input-box input {
-	border: none;
+	border: 1px solid black;
 	padding: 0.6rem;
 	font-size: 1.1rem;
 }
@@ -147,6 +147,37 @@ button:hover {
 	background-color: darkblue;
 	transition: 0.8s;
 }
+footer {
+	display: flex;
+ 	background-color: black;
+ 	justify-content: center;
+}
+.sobre-nos {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.empresa {
+	color: white;
+	font-family: Saira Condensed;
+	margin: 20px 80px;
+}
+.empresa h3 {
+	font-size: 1.5rem;
+}
+.empresa section a, .empresa section p {
+	text-decoration: none;
+	color: white;
+	font-size: 1.2rem;
+}
+.empresa a:hover {
+	border-bottom: 1px solid #0389FE;
+	transition: 0.8s;
+}
+
+/* RESPONSIVIDADE VERTICAL */
+
 @media (min-width:300px) and (max-width:375px) {
 	header {
 		margin-bottom: 5rem;
@@ -171,20 +202,38 @@ button:hover {
 	}
 	.menu nav ul li a {
 		font-size: 0.7rem;
+		padding-top: 0.8rem;
 	}
 	.container {
 		width: 75%;
 	}
 	.input-box input {
-		border: none;
 		width: 90%;
 		padding: 0.75rem;
 	}
 	.continuar button {
 		width: 100%;
 	}
+	footer .sobre-nos {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		text-align: center;
+	}
+	.empresa {
+		font-size: 1.2rem;
+		margin: 10px 20px;
+	}
+	.empresa section p {
+		font-size: 1rem;
+	}
+	.empresa section a {
+		font-size: 1rem;
+		padding-top: 1rem;
+		padding-bottom: 0.2rem;
+	}
 }
-@media (min-width:376px) and (max-width: 768px) {
+@media (min-width:376px) and (max-width: 699px) {
 	main {
 		padding-top: 4rem;
 		margin-bottom: 2rem;
@@ -206,15 +255,24 @@ button:hover {
 		width: 75%;
 	}
 	.input-box input {
-		border: none;
 		width: 90%;
 		padding: 0.75rem;
 	}
 	.continuar button {
 		width: 100%;
 	}
+	footer .sobre-nos {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		text-align: center;
+	}
 }
 @media (min-width:700px) and (max-width:799px) {
+	main {
+		padding-top: 5rem;
+		margin-bottom: 8rem;
+	}
 	.logo img {
 		width: 24rem;
 		height: auto;
@@ -225,28 +283,51 @@ button:hover {
 		padding: 1rem 1rem 0.5rem 0;
 	}
 	.container {
-		width: 75%;
+		width: 55%;
 	}
 	.titulo h1 {
-		font-size: 4rem;
+		font-size: 3.5rem;
 	}
 	.input-box input {
 		font-size: 1.5rem;
+		width: 100%;
 	}
 	.input-box label {
 		font-size: 1.8rem;
 	}
 	.continuar button {
 		font-size: 2rem;
+		width: 110%;
 	}
 	.continuar button a {
 		font-size: 2rem;
 	}
+	footer .sobre-nos {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		text-align: center;
+	}
+	.empresa {
+		text-align: center;
+		margin: 0.6rem 10rem;
+	}
+	.empresa section a {
+		font-size: 1.7rem;
+		padding-top: 1rem;
+		padding-bottom: 0.2rem;
+	}
+	.empresa h3 {
+		font-size: 2.5rem;
+	}
+	.empresa section p {
+		font-size: 1.7rem;
+	}
 }
-@media (min-width:800px) and (max-width:1023px) {
+@media (min-width:800px) and (max-width:1024px) {
 	main {
-		padding-top: 4rem;
-		margin-bottom: 2rem;
+		padding-top: 8rem;
+		margin-bottom: 10rem;
 	}
  	.logo img {
 		width: 26rem;
@@ -258,28 +339,114 @@ button:hover {
 		padding: 1rem 1rem 0.5rem 0;
 	}
 	.container {
-		width: 80%;
+		width: 50%;
 	}
 	.titulo h1 {
-		font-size: 4.5rem;
+		font-size: 3.5rem;
 	}
 	.input-box input {
-		font-size: 2rem;
+		font-size: 1.8rem;
+		width: 100%;
 	}
 	.input-box label {
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 	.continuar button {
-		font-size: 2.2rem;
+		font-size: 2rem;
+		width: 110%;
 	}
 	.continuar button a {
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
 	.input-box label span {
 		font-size: 2.3rem;
 	}
+	footer .sobre-nos {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		text-align: center;
+	}
+	.empresa {
+		text-align: center;
+		margin: 0.6rem 10rem;
+	}
+	.empresa section a {
+		font-size: 1.7rem;
+		padding-top: 1rem;
+		padding-bottom: 0.2rem;
+	}
+	.empresa h3 {
+		font-size: 2.5rem;
+	}
+	.empresa section p {
+		font-size: 1.7rem;
+	}
 }
-	
+
+/* RESPONSIVIDADE HORIZONTAL */
+
+@media (min-height: 320px) and (max-height: 600px) {
+	main {
+		margin: 10rem 0 10rem 0;
+	}
+	.menu ul {
+	padding: 0;
+	list-style-type: none;
+	}
+	.menu nav ul li a {
+		font-size: 1rem;
+		padding: 0.5rem 1.8rem 0;
+	}
+	.logo img {
+		width: 16rem;
+		height: 3.5rem;
+	}
+	.container {
+		width: 80%;
+	}
+	.titulo h1 {
+		font-size: 2.4rem;
+	}
+	.cadastro {
+		justify-content: space-between;
+	}
+	.input-box input {
+		font-size: 1rem;
+	}
+	.input-box label {
+		font-size: 1rem;
+	}
+	.continuar button {
+		font-size: 1rem;
+	}
+	.continuar button a {
+		font-size: 1rem;
+	}
+	.input-box label span {
+		font-size: 1.2rem;
+	}
+	footer .sobre-nos {
+		flex-direction: row;
+	}
+	.empresa {
+		text-align: center;
+		margin: 0.6rem 3.5rem;
+	}
+	.empresa section a {
+		font-size: 1rem;
+		padding-top: 1rem;
+		padding-bottom: 0.2rem;
+	}
+	.empresa h3 {
+		font-size: 1.5rem;
+	}
+	.empresa section p {
+		font-size: 1rem;
+	}
+}
+
+
 	</style>
 
 </head>
@@ -288,7 +455,7 @@ button:hover {
 	<header>
 
 		<div class="logo">
-			<img src="https://i.ibb.co/tZ6pk7W/Med-Elixir-removebg-preview.png" alt="LOGO">
+			<img src="Imagens/logo-medelixir.png" alt="LOGO">
 		</div>
 
 		<div class="menu">
@@ -337,7 +504,7 @@ button:hover {
 
 					<div class="input-box">
 						<label for="iconfsenha">Confirmar Senha<span>*</span></label>
-						<input type="password" id="iconfsenha" name="nconfsenha" placeholder="Digite sua senha">
+						<input type="password" id="iconfsenha" name="nconfsenha" placeholder="Digite a sua senha">
 					</div>
 
 					<div class="continuar">
@@ -347,5 +514,32 @@ button:hover {
 			</form>
 		</div>
 	</main>
+
+	<footer id="sobre-nos">
+		<div class="sobre-nos">
+			<div class="empresa">
+				<h3>Empresa</h3>
+				<section>
+					<a href="SOBRE MED_ELIXIR+.html">Sobre a MedElixir+</a>
+				</section>
+			</div>
+
+			<div class="empresa">
+				<h3>Desenvolvedores</h3>
+				<section>
+					<a href="sobre_devs.html">Quem somos?</a>
+				</section>
+			</div>
+
+			<div class="empresa">
+				<h3>Contatos</h3>
+				<section>
+					<p>contato@medelixir.com</p>
+					<p>+55 (11)98765-4321</p>
+				</section>
+			</div>
+		</div>
+	</footer>
+
 </body>
 </html>
