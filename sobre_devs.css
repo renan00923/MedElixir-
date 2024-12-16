@@ -92,16 +92,17 @@ header {
 
 @media (min-width:300px) and (max-width: 699px) {
 	.logo {
+		width: 50%;
 		margin: 0;
 	}
 	.logo img {
 		width: 12.5rem;
 		align-items: center;
 		height: auto;
-		margin-top: 4px;
+		margin-top: 0.75rem;
 	}
 	.menu nav ul li a {
-		font-size: 0.8rem;
+		font-size: 0.7rem;
 	}
 	.inicio {
 		width: 90%;
@@ -178,7 +179,7 @@ header {
 		font-family: Saira Condensed;
 	}
 }
-@media (min-height: 320px) and (max-height: 600px) {
+@media (min-height: 320px) and (max-height: 800px) {
 	.menu nav ul li a {
 		font-size: 1rem;
 		padding: 0.3rem 1.8rem 0;

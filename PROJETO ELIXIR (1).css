@@ -408,7 +408,7 @@ footer {
 		font-size: 1.7rem;
 	}
 } 
-@media (min-width:1024px) and (max-width:1024px) {
+@media (min-width:1024px) and (max-width:1024px) and (min-height: 1366px) {
 	header {
 		position: relative;
 		justify-content: center;
